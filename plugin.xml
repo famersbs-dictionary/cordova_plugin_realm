@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.famersbs.realm" version="0.1.1" xmlns="http://www.phonegap.com/ns/plugins/1.0">
+	<name>Realm</name>
+	<engines>
+		<engine name="cordova" version=">=3.6.0"/>
+	</engines>
+	<asset src="www/realm/realm.js" target="js/realm/realm.js"/>
+	<js-module name="realm" src="www/realm/realm.js">
+		<clobbers target="realm"/>
+	</js-module>
+	<!--
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Hello">
+				<param name="android-package" value="com.example.plugin.Hello"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+	</platform>
+	-->
+</plugin>
